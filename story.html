@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霧の妖精の物語</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>メニュー</h2>
+            <ul>
+                <li><a href="../index.html">ホーム</a></li>
+                <li><a href="story.html">ストーリー</a></li>
+                <li><a href="gallery.html">ギャラリー</a></li>
+                <li><a href="profile.html">プロフィール</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>霧の妖精の物語</h1>
+
+            <div class="story">
+                <p class="fade-in">深い霧の中に、一人の小さな妖精がいた。</p>
+                <p class="fade-in">彼女は、霧の奥深くで静かに囁く声を聞いていた。</p>
+                <p class="fade-in">「あなたは誰？」と彼女は問いかけた。</p>
+                <p class="fade-in">すると、霧の向こうから柔らかい光が差し込んできた…</p>
+
+                <div class="story-image fade-in">
+                    <img src="../images/story_scene.jpg" alt="霧の妖精の幻想的な風景">
+                </div>
+
+                <p class="fade-in">彼女は旅に出ることを決めた。</p>
+            </div>
+
+             <!-- BGMの再生ボタン -->
+             <div class="audio-controls">
+             <button id="playBgm">🎶 BGMを再生</button>
+             </div>
+
+             <audio id="bgm" loop>
+             <source src="../music/story_bgm.mp3" type="audio/mp3">
+             お使いのブラウザはオーディオタグをサポートしていません。
+             </audio>
+
+             <script>
+             document.getElementById("playBgm").addEventListener("click", function() {
+             let bgm = document.getElementById("bgm");
+             bgm.play();
+             });
+             </script>
+        </main>
+    </div>
+</body>
+</html>
