@@ -246,17 +246,14 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* 背景画像の適用 */
-body {
-    background: url('images/幻想的な霧.jpg') no-repeat center center fixed;
-    background-size: cover;
-    background-color: #000; /* 画像が表示されない場合の予備 */
-}
 
 /* ストーリー全体のデザイン */
 .story {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: url('images/幻想的な霧.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6); /* 霧の雰囲気を出す */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
